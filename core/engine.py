@@ -19,7 +19,7 @@ def run(title, screen, fps=60):
         if pygame.event.peek(pygame.QUIT):
             break
 
-        controls.handle(delta)
+        controls.handle()
         screen = screen.update(delta)
 
     pygame.display.quit()
